@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratiksha Lokare - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#FFD1DC',
+                            yellow: '#FFFFD1',
+                            blue: '#D1E8FF',
+                            green: '#D1FFE0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        /* Add padding at the top to account for the fixed navbar */
+        section {
+            scroll-margin-top: 80px; /* Adjust to the height of the navbar */
+        }
+
+        /* For smaller screens (e.g., mobile or tablet) */
+        @media (max-width: 768px) {
+            section {
+                scroll-margin-top: 120px; /* Adjust this value for the hamburger navbar height */
+            }
+        }
+    </style>
+</head>
+<body class="bg-pastel-grey">
+    <!-- Change 2: Sticky Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-pink-500 text-lg">Pratiksha Lokare</span>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <!-- Change 1: Responsive Navbar (Hamburger Icon) -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="mobile-menu-btn focus:outline-none">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <!-- Change 3: Added 'scroll to top' functionality on Home link -->
+                    <a href="#" id="home-btn" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Home</a>
+                    <a href="#about" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">About</a>
+                    <a href="#experience" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Experience</a>
+                    <a href="#projects" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Projects</a>
+                    <a href="#contact" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden">
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-200">Experience</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+
+        <header class="bg-white shadow rounded-lg mb-8 overflow-hidden">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+                <div>
+                    <h1 class="text-5xl font-extrabold text-blue-900">Hi, I'm Pratiksha Lokare!</h1> <!-- Dark Blue for a professional look -->
+                    <p class="text-black-700 mt-2 text-xl">Software Engineer | AWS Enthusiast | Lifelong Learner</p> <!-- Muted gray for subtitle -->
+                </div>
+                <img class="h-96 w-96 rounded-full border-4 border-gray-200 shadow-lg" src="/pratiksha.jpeg" alt="Pratiksha Lokare">
+            </div>
+        </header>
+
+
+        <section id="about" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-5xl font-bold text-blue-900 mb-4">About Me</h2>
+            <p class="text-xl text-black-800 mt-4 text-justify">
+                I am an enthusiastic <span class="font-bold text-black-800">Software Developer</span> with over a year of experience in developing innovative software solutions across various domains. Proficient in <span class="font-bold text-black-600">Python, JavaScript, and SQL</span>, I strive to write clean, maintainable, and reusable code. With a strong foundation in <span class="font-bold text-black-600">cloud computing</span>, I am ambitious about harnessing the latest technologies to create impactful applications that address real-world challenges. Eager to explore new opportunities, I aim to contribute to projects that push the boundaries of what's possible in the tech industry.
+            </p>
+            <p class="text-xl font-semibold text-black mt-4 text-justify">Let’s connect to discuss potential collaborations and how we can innovate together!</p>
+
+            <div class="flex flex-wrap gap-2 mt-4 justify-around">
+                
+                <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-lg font-medium bg-pastel-blue text-pink-800">
+                    <img src="python.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                    Python
+                </span>
+                <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-lg font-medium bg-pastel-blue text-pink-800">
+                    <img src="Amazon_Web_Services_Logo.svg.png" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                    AWS
+                </span>
+                <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-lg font-medium bg-pastel-blue text-pink-800">
+                    <img src="sql-database-generic.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                    SQL
+                </span>
+                <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-lg font-medium bg-pastel-blue text-pink-800">
+                    <img src="logo-react.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                    React
+                </span>
+                <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-lg font-medium bg-pastel-blue text-pink-800">
+                    <img src="javascript.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                    JavaScript
+                </span>
+                
+               
+            </div>
+        </section>
+
+
+
+
+
+        <section id="experience" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-5xl font-bold text-blue-900 mb-4">Experience</h2>
+            <div class="space-y-6">
+
+                <!-- Research Intern -->
+                <div class="bg-pastel-blue bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="text-2xl font-bold text-pink-900">Research Intern</h3>
+
+
+                    <p class="text-black-600 font-bold">
+                        <a href="https://www.uta.edu/" target="_blank" class=" underline hover:text-pink-700">
+                            University of Texas at Arlington
+                        </a> | Jan 2024 - Present
+                    </p>
+
+                    <ul class="list-disc list-inside mt-2 text-black-600 text-justify">
+                        <li>Utilized Python for data analysis and visualization, focusing on pharmacokinetic modeling.</li>
+                        <li>Analyzed 20+ datasets to extract insights, identifying trends and patterns.</li>
+                        <li>Contributed to the development of machine learning models, improving predictive accuracy by 10% in nanoparticle efficacy analysis.</li>
+                    </ul>
+                </div>
+
+                <!-- Jibu Labs Experience -->
+                <div class="bg-pastel-grey bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="text-2xl font-bold text-pink-900">Software Engineering Intern</h3>
+
+                    <p class="text-black-600 font-bold">
+                        <a href="https://jibulabs.com/" target="_blank" class=" underline hover:text-pink-700">
+                            Jibu Labs
+                        </a> | July 2024 - August 2024
+                    </p>
+
+                    <ul class="list-disc list-inside mt-2 text-black-600 text-justify">
+                        <li>Enhanced frontend functionality using React, TypeScript, and JavaScript to improve user experience and engagement.</li>
+                        <li>Developed RESTful APIs using Flask, adhering to Clean Architecture principles, which streamlined communication between frontend and backend systems.</li>
+                        <li>Collaborated with cross-functional teams and clients to implement custom features and address requirements, leading to timely project delivery.</li>
+                        <li>Integrated AWS S3 for image uploads, optimizing storage management for user-generated content.</li>
+                        <li>Led debugging efforts for critical bugs, resulting in increased application stability and reliability.</li>
+                    </ul>
+                </div>
+                
+                <!-- Graduate Teaching Assistant -->
+                <div class="bg-pastel-blue bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="text-2xl font-bold text-pink-900">Graduate Teaching Assistant</h3>
+
+                    <p class="text-black-600 font-bold">
+                        <a href="https://www.uta.edu/" target="_blank" class=" underline hover:text-pink-700">
+                            University of Texas at Arlington
+                        </a> | Aug 2023 - Dec 2023
+                    </p>
+                    <ul class="list-disc list-inside mt-2 text-black-600 text-justify">
+                        <li>Refined course materials and enhanced student comprehension for the Software Testing course.</li>
+                        <li>Led discussions and personalized office hours, improving student comprehension by 25%.</li>
+                        <li>Integrated SDLC and agile methodologies into the curriculum, and supervised Selenium lab sessions for hands-on automated testing experience.</li>
+                    </ul>
+                </div>
+        
+                <!-- Software Engineer -->
+                <div class="bg-pastel-grey bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="text-2xl font-bold text-pink-900">Software Engineer</h3>
+
+                    <p class="text-black-600 font-bold">
+                        <a href="https://saicon.com/" target="_blank" class=" underline hover:text-pink-700">
+                            Saicon Technologies
+                        </a> | Nov 2020 - Dec 2021
+                    </p>
+
+                    <ul class="list-disc list-inside mt-2 text-black-600">
+                        <li>Developed an employee tracking system using AWS Lambda and API Gateway, improving productivity by 30%.</li>
+                        <li>Automated cloud infrastructure provisioning with AWS CloudFormation, reducing deployment time by 50%.</li>
+                        <li>Designed a dynamic dashboard with AWS DynamoDB and Redshift, leading to a 25% improvement in recruitment KPIs.</li>
+                        <li>Reduced security vulnerabilities by 40% with AWS Cognito for authentication and authorization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="mb-8">
+            <h2 class="text-5xl font-bold text-blue-900 mb-4">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Expense Tracker -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/personal-expense-tracker-template-hero.jpeg" alt="Expense Tracker" class="w-full h-48 object-cover object-top ">
+                    <div class="p-6 bg-pastel-grey bg-opacity-30">
+                        <h3 class="text-2xl font-bold text-pink-900">Expense Tracker</h3>
+                        <p class="text-gray-600 mt-4">Developed an Expense Tracker using AWS Amplify and Cognito for secure authentication, along with AWS DynamoDB for efficient data storage and Lambda for backend processing.</p>
+
+                        <span class="inline-flex items-center mt-4 justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="python.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            Python
+                        </span>
+                        <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                        <img src="logo-react.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                        React
+                        </span>
+                        <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="Amazon_Web_Services_Logo.svg.png" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            AWS
+                        </span>
+                        <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="flask.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            Flask
+                        </span>
+
+                    </div>
+                </div>
+
+                
+                <!-- E-Learning Platform -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/e_learning.jpg" alt="E-Learning Platform" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-pastel-grey bg-opacity-30">
+                        <h3 class="text-2xl font-bold text-pink-900">E-Learning Platform</h3>
+                        <p class="text-gray-600 mt-4">Built an E-Learning platform using Spring Boot, with a dynamic Content Management System for instructors and Amazon S3 for efficient storage and CloudFront for fast content delivery.</p>
+                        
+                        <span class="inline-flex items-center mt-4 justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="java.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            Java
+                        </span>
+                        <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="Spring_Boot.svg.png" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            Spring Boot
+                        </span>
+                        <span class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-pink-800">
+                            <img src="mongodb.svg" alt="Python Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                            MongoDB
+                        </span>
+                    
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="bg-white shadow rounded-lg p-6 flex flex-col items-center">
+            <h2 class="text-5xl font-bold text-blue-900 mb-4 text-center">Let's Connect!</h2>
+            
+            <div class="bg-pastel-pink p-4 rounded-lg">
+                <p class="text-sm text-gray-700 text-center">
+                    <span class="flex items-center justify-center mb-2">
+                        <img src="email.svg" alt="Email Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                        <a href="mailto:pratikshalokare447@gmail.com" class="text-xl font-bold text-pink-500">pratikshalokare447@gmail.com</a>
+                    </span>
+                    <span class="flex items-center justify-center">
+                        <img src="red-phone-7151.svg" alt="Phone Icon" class="mr-2" style="width: 1.25rem; height: 1.25rem;">
+                        <a href="tel:+18178297964" class="text-pink-500 hover:underline">+1 (817) 829-7964</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        
+        
+
+       
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Change 3: Scroll to the top when 'Home' is clicked
+        const homeBtn = document.getElementById('home-btn');
+        homeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Smith - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#FFD1DC',
+                            yellow: '#FFFFD1',
+                            blue: '#D1E8FF',
+                            green: '#D1FFE0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-pastel-yellow">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-pink-500 text-lg">Sarah Smith</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Home</a>
+                    <a href="#about" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">About</a>
+                    <a href="#experience" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Experience</a>
+                    <a href="#projects" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Projects</a>
+                    <a href="#contact" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <header class="bg-white shadow rounded-lg mb-8 overflow-hidden">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between bg-pastel-pink">
+                <div>
+                    <h1 class="text-3xl font-bold text-white">Welcome to My Cute Corner!</h1>
+                    <p class="text-white mt-2">Where Creativity Meets Code 💖</p>
+                </div>
+                <img class="h-32 w-32 rounded-full border-4 border-white shadow-lg" src="/placeholder.svg?height=128&width=128" alt="Sarah Smith">
+            </div>
+        </header>
+
+        <section id="about" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">About Me</h2>
+            <p class="text-gray-600 mb-4">
+                Hello there! I'm Sarah Smith, a passionate web developer with a love for creating beautiful and functional websites. With 3 years of experience, I specialize in bringing a touch of whimsy to the digital world while ensuring top-notch functionality.
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-pink text-pink-800">
+                    <i data-feather="heart" class="mr-2 h-4 w-4"></i>HTML/CSS
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-yellow text-yellow-800">
+                    <i data-feather="star" class="mr-2 h-4 w-4"></i>JavaScript
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-blue-800">
+                    <i data-feather="coffee" class="mr-2 h-4 w-4"></i>React
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-green text-green-800">
+                    <i data-feather="smile" class="mr-2 h-4 w-4"></i>UI/UX Design
+                </span>
+            </div>
+        </section>
+
+        <section id="experience" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">My Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-pastel-blue bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg text-blue-600">Senior Frontend Developer</h3>
+                    <p class="text-gray-600">TechCute Solutions • 2021 - Present</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Lead the frontend development of various client projects</li>
+                        <li>Implemented responsive designs and improved site performance</li>
+                        <li>Mentored junior developers and conducted code reviews</li>
+                    </ul>
+                </div>
+                <div class="bg-pastel-green bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg text-green-600">Web Developer</h3>
+                    <p class="text-gray-600">PixelPerfect Studios • 2019 - 2021</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Developed and maintained client websites using HTML, CSS, and JavaScript</li>
+                        <li>Collaborated with designers to implement visually appealing interfaces</li>
+                        <li>Optimized websites for maximum speed and scalability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">My Cute Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-pastel-pink bg-opacity-30">
+                        <h3 class="font-semibold text-lg mb-2 text-pink-600">Adorable E-commerce</h3>
+                        <p class="text-gray-600">A charming online store for cute stationery and accessories.</p>
+                        <a href="#" class="mt-4 inline-block bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600 transition duration-300">View Project</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-pastel-blue bg-opacity-30">
+                        <h3 class="font-semibold text-lg mb-2 text-blue-600">Kawaii Task Planner</h3>
+                        <p class="text-gray-600">A delightful task management app with cute animations and stickers.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white shadow rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">Let's Connect!</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+                        Send Message 💌
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="bg-pastel-pink mt-8">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <p class="text-pink-800">© 2023 Sarah Smith. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-pink-800 hover:text-pink-900">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-pink-800 hover:text-pink-900">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-pink-800 hover:text-pink-900">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- //part two -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratiksha Lokare -Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            pink: '#FFD1DC',
+                            yellow: '#FFFFD1',
+                            blue: '#D1E8FF',
+                            green: '#D1FFE0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-pastel-yellow">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-pink-500 text-lg">Pratiksha Lokare</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Home</a>
+                    <a href="#about" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">About</a>
+                    <a href="#experience" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Experience</a>
+                    <a href="#projects" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Projects</a>
+                    <a href="#contact" class="py-4 px-2 text-pink-500 font-semibold hover:text-pink-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <header class="bg-white shadow rounded-lg mb-8 overflow-hidden">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-between bg-pastel-pink">
+                <div>
+                    <h1 class="text-3xl font-bold text-white">Hi, I'm Pratiksha Lokare!</h1>
+                    <p class="text-white mt-2">Software Engineer | AWS Enthusiast | Lifelong Learner</p>
+                </div>
+                <img class="h-32 w-32 rounded-full border-4 border-white shadow-lg" src="/pratiksha1.jpeg" alt="Pratiksha Lokare">
+            </div>
+        </header>
+
+        <section id="about" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">About Me</h2>
+            <p class="text-gray-600 mb-4">
+                I'm a passionate Full Stack Developer with extensive experience in cloud technologies like AWS and building responsive web applications using React, Flask, and TypeScript. I have a strong focus on creating efficient, scalable, and user-friendly applications. My journey spans both professional development and research, where I apply innovative approaches to problem-solving.
+            </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-pink text-pink-800">
+                    <i data-feather="heart" class="mr-2 h-4 w-4"></i>AWS
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-yellow text-yellow-800">
+                    <i data-feather="star" class="mr-2 h-4 w-4"></i>React
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-blue text-blue-800">
+                    <i data-feather="coffee" class="mr-2 h-4 w-4"></i>Flask
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-pastel-green text-green-800">
+                    <i data-feather="smile" class="mr-2 h-4 w-4"></i>TypeScript
+                </span>
+            </div>
+        </section>
+
+        <section id="experience" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">My Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-pastel-blue bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg text-blue-600">Software Engineering Intern</h3>
+                    <p class="text-gray-600">Jibu Labs • July 2024 - Present</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Enhanced frontend functionality using React and TypeScript.</li>
+                        <li>Developed Flask APIs implementing Clean Architecture.</li>
+                        <li>Collaborated with clients and cross-functional teams for project execution.</li>
+                    </ul>
+                </div>
+                <div class="bg-pastel-green bg-opacity-30 p-4 rounded-lg">
+                    <h3 class="font-semibold text-lg text-green-600">Software Engineer</h3>
+                    <p class="text-gray-600">Saicon Technologies • Nov 2020 - Dec 2021</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Engineered an employee tracking system using AWS Lambda and API Gateway.</li>
+                        <li>Developed and deployed cloud infrastructure with AWS CloudFormation.</li>
+                        <li>Led the development of serverless architecture and dynamic dashboards.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-8">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">Highlighted Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/expense-tracker.jpg" alt="Expense Tracker" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-pastel-pink bg-opacity-30">
+                        <h3 class="font-semibold text-lg mb-2 text-pink-600">Expense Tracker</h3>
+                        <p class="text-gray-600">A cloud-based application for expense tracking and group bill splitting, developed using AWS Amplify, Lambda, and DynamoDB.</p>
+                        <a href="#" class="mt-4 inline-block bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600 transition duration-300">View Project</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/e-learning-platform.jpg" alt="E-Learning Platform" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-pastel-blue bg-opacity-30">
+                        <h3 class="font-semibold text-lg mb-2 text-blue-600">E-Learning Platform</h3>
+                        <p class="text-gray-600">An online learning platform using Spring Boot for backend and a dynamic user interface for educational content delivery.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white shadow rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-pink-500 mb-4">Let's Connect!</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300">
+                        Send Message 💌
+                    </button>
+                </div>
+            </form>
+        </section> -->
+
